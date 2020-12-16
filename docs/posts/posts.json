@@ -1,11 +1,28 @@
 [
   {
+    "path": "posts/2020-12-16-2014-12-22-openbox-wm-dalam-mate/",
+    "title": "Openbox WM di dalam MATE DE",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Aldilas Achmad Nursetyo",
+        "url": "https://aldeetropolis.github.io/about.html"
+      }
+    ],
+    "date": "2014-12-22",
+    "categories": [],
+    "contents": "\r\nKali ini saya ingin share hasil oprek desktop environment MATE di laptop ASUS saya. Daripada WM Marco yang sempat crash dengan LibreOffice sehingga tidak saya nyalakan compositing managernya (ada bug yang penyelesainnya harus update ke MATE 1.8 dan saya lagi malas update). Jadi apa bedanya dengan menggunakan WM lain yang tidak punya fitur compositing (Openbox, Fluxbox, IceWM). Satu lagi keuntungan menggunakan Openbox adalah memang terasa lebih ringan ketimbang menggunakan Marco.\r\nSebagai catatan berikut saya gambarkan spesifikasi mesin dan perangkat lunak yang saya gunakan : - Mesin : Notebook ASUS A43E; Processor i3; RAM 2 GB; Chipset Intel - OS : Linux Mint Debian Edition/Debian Jessy - DE MATE 1.6.1 - WM Openbox 3.5.2 - Theme Mate dan Openbox sesuai selera, di sini saya menggunakan Numix\r\nPertama, tentu saja sudah menggunakan DE MATE di mesin Anda, lalu buka terminal dan install paket Openbox dan obconf dengan mengetikkan perintah :\r\nsudo apt-get install openbox obconf\r\nSetelah terinstall, maka kita harus mengganti WM default dari Marco ke Openbox. Beberapa tutorial lain menyarankan untuk mengedit konfigurasi MATE menggunakan dconf-editor. Namun saya menemukan perintah â€“replace saja sudah cukup.\r\nBuka setting aplikasi awalan pada menu MintMenu > Preferensi > Aplikasi Awalan.\r\nKemudian klik tombol â€œTambahâ€ dan masukkan perintah:\r\nopenbox --replace\r\nSetelah disimpan kemudian logout/restart mesin Anda.\r\nSelamat mencoba :)\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2020-12-16T16:47:57+07:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2020-12-16-2013-12-27-pustaka-jurnal-dengan-mendeley/",
     "title": "Pustaka Jurnal dengan Mendeley",
     "description": "Pengalaman menggunakan aplikasi Mendeley sebagai manajemen pustaka artikel ilmiah.",
     "author": [
       {
-        "name": "Aldilas Achmad N",
+        "name": "Aldilas Achmad Nursetyo",
         "url": "https://aldeetropolis.github.io/about.html"
       }
     ],
@@ -13,7 +30,7 @@
     "categories": [],
     "contents": "\r\nSeorang dokter dituntut untuk selalu memperbarui pengetahuannya. Kalau hanya mengandalkan textbook yang hanya diperbarui entah berapa tahun sekali bisa-bisa ketinggalan informasi terbaru. Makanya ada beberapa cara supaya tidak ketinggalan informasi misalnya mengikuti seminar atau workshop dan membaca jurnal penelitian, baik dalam bentuk cetak maupun elektronik.\r\nKali ini saya ingin membahas tentang manajemen pustaka jurnal elektronik dalam komputer pribadi. Beberapa orang memiliki cara tersendiri menyusun jurnal-jurnal yang dimilikinya supaya mudah mencarinya, namun ada beberapa orang malas (terutama saya) yang lebih suka menumpuk jurnal-jurnal tersebut dalam satu tempat lalu untuk mencarinya dengan mengetikkan kata kunci.\r\nMendeley merupakan salah satu penyedia layanan reference manager yang cukup populer. Salah satu kelebihan kenapa saya memilih menggunakannya adalah karena mereka membuat graphical interface untuk Linux :p\r\nUntuk dapat menjalankan Mendeley secara offline dan standalone di desktop Anda silahkan mengunjungi web Mendeley di sini untuk mengunduh installer sekaligus membuat akun. Mendeley menyediakan installer untuk Windows, Mac, dan Linux. Karena saya menggunakan Linux Mint di laptop maka saya bisa menggunakan paket instalasi untuk Debian.\r\nSaya sudah lama mengumpulkan jurnal-jurnal sejak masih kuliah S1, baik itu digunakan untuk tugas atau hanya iseng mengumpulkan karena tertarik dengan judulnya. Kebanyakan jurnal online diterbitkan dalam bentuk file PDF yang saya simpan dalam satu folder khusus, dan kadang dikelompokkan sesuai dengan urgensi pada saat itu. Mendeley memiliki salah satu fitur bernama Watch Folder sehingga kita bisa menerapkan salah satu folder tempat kita menyimpan jurnal-jurnal. Jadi ketika kita menyimpan jurnal yang baru maka secara otomatis Mendeley akan melakukan sinkronisasi dengan pustaka yang sudah ada.\r\nSusahnya kalau mau baca jurnal tertentu yang sudah disimpan. Kebiasaan kalau mengunduh jurnal tidak sekalian mengganti nama filenya. Namun dengan Mendeley kita bisa mencari jurnal yang kita inginkan dengan menggunakan search engine. Dan dengan fitur PDF readernya kita bisa membaca beberapa jurnal sekaligus di dalam Mendeley. Asik ya :D\r\nYah, itu baru sekilas pengalaman awal saya menggunakan Mendeley. Saya sih belum menggunakannya sebagai manajemen sitasi, masih lebih asik menggunakan teknik manual. Nanti akan kita eksplorasi lagi penggunaan Mendeley sebagai manajemen sitasi pada beberapa pengolah dokumen populer seperti MS Word, LibreOffice Writer, dan yang tidak populer seperti LaTex :)\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2020-12-16T16:14:58+07:00",
+    "last_modified": "2020-12-16T16:48:14+07:00",
     "input_file": {}
   }
 ]

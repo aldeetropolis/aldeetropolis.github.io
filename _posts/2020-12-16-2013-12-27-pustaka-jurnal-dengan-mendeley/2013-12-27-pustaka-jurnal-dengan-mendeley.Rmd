@@ -3,7 +3,7 @@ title: "Pustaka Jurnal dengan Mendeley"
 description: |
   Pengalaman menggunakan aplikasi Mendeley sebagai manajemen pustaka artikel ilmiah.
 author:
-  - name: Aldilas Achmad N
+  - name: Aldilas Achmad Nursetyo
     url: https://aldeetropolis.github.io/about.html
 date: 12-27-2013
 output:
