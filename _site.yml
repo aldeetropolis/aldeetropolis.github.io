@@ -3,6 +3,7 @@ title: "R in Healthcare Blog"
 description: |
   R in Healthcare Blog
 output_dir: "docs"
+base_url: https://aldeetropolis.github.io
 navbar:
   right:
     - text: "Home"
