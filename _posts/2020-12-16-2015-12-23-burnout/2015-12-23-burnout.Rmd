@@ -1,0 +1,48 @@
+---
+title: "Burnout"
+description: |
+  What is burnout?
+author:
+  - name: Aldilas Achmad Nursetyo
+    url: https://aldeetropolis.github.io/about.html
+date: 12-23-2015
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Tak terasa sudah 1 bulan saya menempati â€œpekerjaanâ€ baru saya sebagai dokter internship di RSUD Inche Abdoel Moeis Samarinda, sebuah rumah sakit yang terletak di pinggiran kota Samarinda, Kalimantan Timur. Bulan pertama ini saya ditempatkan sebagai dokter jaga ruangan dengan siklus jaga yang kelihatannya ringan namun ternyata setelah dijalani cukup exhaustive.
+
+Beberapa hari yang lalu saya harus berjuang dengan kondisi fisik, mental, dan emosional yang kurang stabil. Perasaan yang lelah berkepanjangan, padahal istirahat sudah lebih dari cukup. Awalnya saya coba abaikan kondisi ini, namun ternyata semakin lama semakin parah. Berangkat ke RS sangat tidak bersemangat, ngantukan, dan kurang cepat dalam membuat keputusan. Saya coba searching di Google mengenai kondisi ini, dan ternyata inilah yang disebut dengan Burnout.
+
+Mayo Clinic mendefinisikan burnout sebagai suatu situasi di mana penderita merasakan kelelahan fisik, mental, serta emosional yang berkepanjangan. Biasanya disertai dengan keraguan dan kekhawatiran akan kemampuan diri (low self-esteem). Sign dan symptom yang dirasakan penderita biasanya adalah (1) kesulitan mengendalikan emosi dan kesabaran ketika bekerja, (2) merasa â€œterpaksaâ€ dalam bekerja, (3) merasa kehilangan tenaga, (4) tidak puas dengan hasil pekerjaan yang dilakukan, (5) meragukan keputusan di dalam pekerjaan, dan tentu saja (6) perubahan pola tidur. Keluhan burnout kadang disertai juga dengan nyeri fisik yang tidak dapat dijelaskan. Kalau sudah mengerti trias General Anxiety Disorder mungkin gejalanya mirip-mirip seperti itu.
+
+Ada beberapa hal yang menyebabkan kita dapat mengalami burnout, diantaranya adalah tidak dapat mengatur jadwal pekerjaan, ekspektasi pekerjaan yang tidak jelas, pekerjaan tidak sesuai dengan passion yang dimiliki, bekerja secara berlebihan, dan kekurangan motivasi dan dorongan dari lingkungan sosial terkait dengan pekerjaan.
+
+Setelah beberapa hari hingga saya menulis blog ini, bisa saya simpulkan saya hampir dapat mengatasi kondisi burnout ini. Tips-tips mengatasi burnout bisa Anda searching sendiri, sudah banyak sumber yang menuliskan tentang hal ini. Tapi saya akan menuliskan apa yang saya lakukan untuk mengatasi burnout yang saya alami.
+
+### 1. Menjaga ekspektasi
+
+Burnout bisa diawali dari kekecewaan kita terhadap pekerjaan. Kecewa adalah situasi di mana ekspektasi tidak sesuai dengan realitas yang diharapkan (ini definisi ngarang sendiri). Saya coba menjaga ekspektasi (seperti rekan kerja yang enak, suasana kerja yang mendukung, berusaha terlalu keras dalam bekerja untuk mendapat pujian) sehingga tidak menimbulkan kekecewaan ketika hal yang tidak sesuai harapan terjadi.
+
+### 2. Curhat
+
+Social support ternyata sangat penting ketika kita merasa kecewa, sedih, marah di dalam pekerjaan yang kita lakukan. Hubungi sahabat, kawan lama, bisa rekan kerja yang kita percaya atau orang yang sama sekali tidak berhubungan dengan pekerjaan kita.
+
+### 3. Mengatur waktu untuk melakukan kegiatan lain
+
+Masalah yang sering dihadapi dokter umum terkait pekerjaannya adalah jam kerja shift yang tentu saja akan mengacaukan jam istirahat dan waktu luang di antara jadwal shift. Saya mencoba mengubah fokus. Ketika bekerja ya saya fokuskan untuk bekerja, tapi ketika tiba waktu setelah bekerja maka coba manfaatkan sebaik mungkin waktu tersebut untuk tidak memikirkan pekerjaan. Lakukan kegiatan yang kita sukai untuk mengisi waktu luang tersebut. Saya sih mengisinya dengan nonton film di laptop, baca buku, menulis, ngobrol dengan teman, dan juga jalan-jalan ke kota.
+
+### 4. Meningkatkan ibadah
+
+Agak klise sih, tapi coba dinilai ulang kualitas ibadahnya. Apakah Anda tidak menikmati momen-momen beribadah karena terlalu memikirkan pekerjaan? Bisa jadi hal itu mengubah ibadah yang harusnya jadi oase malah jadi gurun pasir gersang yang membuang waktu berharga Anda untuk mengisi ulang tenaga spiritual Anda.
+
+Intinya, kita tidak dapat mengendalikan apa-apa saja yang terjadi ketika kita bekerja. Entah itu rekan kerja yang menyebalkan, fasilitas yang jauh dari ideal, serta hasil yang tidak memenuhi harapan kita. Sebisa mungkin menghindari hal-hal yang menyebabkan kita kecewa. Jika Anda merasa terpaksa dengan pekerjaan Anda saat ini, segera resign, atau yakinlah â€œinternship pasti berlaluâ€, hehehe.
+
+Takehome pay... eh, maksudnya takehome messagenya adalah :
+Apakah Anda beberapa hari ini merasa tak bertenaga? Lelah yang berkepanjangan padahal tidur sudah lebih dari cukup? Bisa jadi Anda sedang mengalami burnout. Segera lakukan tips-tips yang telah saya tuliskan di atas.

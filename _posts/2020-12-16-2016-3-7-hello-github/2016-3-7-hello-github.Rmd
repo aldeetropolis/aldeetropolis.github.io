@@ -1,0 +1,27 @@
+---
+title: "Hello, Github!"
+description: |
+  Well, what do you expect?
+author:
+  - name: Aldilas Achmad Nursetyo
+    url: https://aldeetropolis.github.io/about.html
+date: 03-07-2016
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Halo, apa kabar? Ini adalah (Insya Allah) blog terbaru saya dengan konsep yang lebih simple, to-the-point, dan easy-to-navigate. Mungkin agak bosan dengan platform blogging mainstream sekarang dan karena kurang suka terlalu lama online (I'm getting easy to distracted and procrastinate) jadi mau cari platform blogging yang simple dan gampang untuk diupload (draft tulisan) kalau pas lagi ada internet.
+
+Blog ini juga digunakan untuk merapikan blog lama saya di Wordpress yaitu [Stethoscope and Diode](http://aldeetropolis.wordpress.com) karena rasa-rasanya kontennya kurang konsisten dan yaa, kurang rapi aja. Terutama di bagian kategori dan tagsnya. Jadi seiring ada konten baru yang fresh ada juga konten pilihan yang akan diupload ulang sesuai tingkat kepopulerannya (kayak blognya populer aja).
+
+Pada dasarnya Github adalah situs media sosial (web 2.0) dimana penggunanya dapat mengupload proyek aplikasi/software mereka dan dapat berinteraksi dengan pengguna lainnya mengenai proyek software mereka. Bisa dibilang situs bikinan penulis kernel Linux, [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), ini merupakan salah satu situs sosial yang membuat penggunanya menjadi produktif.
+
+Untuk yang menyukai kesederhanaan dan nggak mau ribet dengan _text editor_ WYSIWYG khas platform blogging yang populer, mungkin akan jatuh dengan platform blogging menggunakan Github ini. Dengan konsep yang simpel, mungkin kapan-kapan bisa saya ulas bagaimana cara ngeblog di Github.
+
+Adios!

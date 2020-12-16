@@ -7,7 +7,39 @@
     <description>R in Healthcare Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 22 Dec 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 May 2016 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Writing with Emacs</title>
+      <dc:creator>Aldilas Achmad Nursetyo</dc:creator>
+      <link>https://aldeetropolis.github.io/posts/2020-12-16-2016-5-21-writing-with-emacs</link>
+      <description>Writing can be using anything!</description>
+      <guid>https://aldeetropolis.github.io/posts/2020-12-16-2016-5-21-writing-with-emacs</guid>
+      <pubDate>Sat, 21 May 2016 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Islam Certificate of Peace Hoax atau Fakta</title>
+      <dc:creator>Aldilas Achmad Nursetyo</dc:creator>
+      <link>https://aldeetropolis.github.io/posts/2020-12-16-2016-3-7-islam-certificate-of-peace-hoax-atau-fakta</link>
+      <description>Debunking hoax</description>
+      <guid>https://aldeetropolis.github.io/posts/2020-12-16-2016-3-7-islam-certificate-of-peace-hoax-atau-fakta</guid>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hello, Github!</title>
+      <dc:creator>Aldilas Achmad Nursetyo</dc:creator>
+      <link>https://aldeetropolis.github.io/posts/2020-12-16-2016-3-7-hello-github</link>
+      <description>Well, what do you expect?</description>
+      <guid>https://aldeetropolis.github.io/posts/2020-12-16-2016-3-7-hello-github</guid>
+      <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Burnout</title>
+      <dc:creator>Aldilas Achmad Nursetyo</dc:creator>
+      <link>https://aldeetropolis.github.io/posts/2020-12-16-2015-12-23-burnout</link>
+      <description>What is burnout?</description>
+      <guid>https://aldeetropolis.github.io/posts/2020-12-16-2015-12-23-burnout</guid>
+      <pubDate>Wed, 23 Dec 2015 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Openbox WM di dalam MATE DE</title>
       <dc:creator>Aldilas Achmad Nursetyo</dc:creator>

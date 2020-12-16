@@ -6,14 +6,14 @@
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\r\nProfile pictureBlog ini dikelola oleh seorang dokter yang berdomisili di Yogyakarta. Memiliki minat yang cukup tinggi di bidang teknologi informasi. Menyelesaikan pendidikan dokter di Universitas Muhammadiyah Yogyakarta (selesai tahun 2015). Setelah menyelesaikan pendidikan dokter, dilanjutkan dengan melanjutkan program internship Kementerian Kesehatan RI dengan homebase RSUD Inche Abdoel Moeis dan puskesmas Karang Asam, Samarinda. Satu tahun lamanya, dan agak sengaja molor sedikit untuk bisa mencari pengalaman di bidang sistem surveilans Dinas Kesehatan Kota Samarinda. Pulang dari Samarinda mengikuti proyek penelitian “Peningkatan Sistem Evaluasi dan Monitoring Program KB di Indonesia” dengan Pusat Kebijakan dan Manajemen Kesehatan FK UGM. Kurang lebih satu tahun di sana kemudian melanjutkan pendidikan S2 di Taipei Medical University jurusan Biomedical Informatics dengan beasiswa penuh. Kini menjadi peneliti lepas dan seorang dokter umum.\r\nKontak: mail.aldilas@gmail.com\r\nPublikasi\r\n2019 1. Prediction of Clinical Events in Hemodialysis Patients Using an Artificial Neural Network link 2. Virtual reality among the elderly: a usefulness and acceptance study from Taiwan link 3. Graft Rejection Prediction Following Kidney Transplantation Using Machine Learning Techniques: A Systematic Review and Meta-Analysis link\r\n2018 1. Artificial-Intelligence-Based Prediction of Clinical Events among Hemodialysis Patients Using Non-Contact Sensor Data link 2. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study link 3. Virtual Reality for Active Ageing: A feasibility study in Taiwan (APAMI 2018) 4. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study link 5. Mobile and Wearable Technologies in Healthcare for the Ageing Population link\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-16T16:49:32+07:00"
+      "last_modified": "2020-12-16T20:54:11+07:00"
     },
     {
       "path": "index.html",
       "title": "R in Healthcare Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-16T16:49:32+07:00"
+      "last_modified": "2020-12-16T20:54:11+07:00"
     }
   ],
   "collections": ["posts/posts.json"]

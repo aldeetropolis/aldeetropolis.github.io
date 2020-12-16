@@ -1,0 +1,64 @@
+---
+title: "Writing with Emacs"
+description: |
+  Writing can be using anything!
+author:
+  - name: Aldilas Achmad Nursetyo
+    url: https://aldeetropolis.github.io/about.html
+date: 05-21-2016
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Hari-hari seorang mahasiswa dan dokter muda selalu dipenuhi dengan tulis-menulis (menulis laporan, tugas, makalah, skripsi, dsb). Maka berurusan dengan aplikasi _word processor_ adalah makanan sehari-hari. Ada satu hal yang lekat dalam ingatan saya saat menggunakan aplikasi word processor yaitu ketika proses menyunting dokumen seperti mengatur heading, penomeran, indentasi, margin, dan lain sebagainya. Kelemahan menyunting dokumen dengan _word processor_ adalah otomatisasi dan opsi-opsi penyuntingan yang kadang tidak kita perlukan. Meskipun kesannya sangat membantu dengan banyak opsi tersebut namun bagi saya dapat mendistraksi proses menulis kreatif. Terlebih lagi word processor dilengkapi fitur-fitur yang kadang tidak kita perlukan seperti otokoreksi kata-kata yang salah eja.
+
+Aplikasi _word processor_ memiliki konsep _What You See Is What You Get_ (WYSIWYG), artinya dokumen apapun yang kita tulis dan bagaimana kita menyuntingnya akan sama hasilnya setelah dicetak. Maka aplikasi ini menyediakan banyak tool untuk "memudahkan" penyuntingan dokumen sesuai dengan yang diinginkan. Namun fitur-fitur ini justru mengganggu proses menulis kreatif. Secara tidak sadar kita lebih sibuk menyunting dokumen dibandingkan menulis isi dokumen.
+
+Banyak sekali aplikasi alternatif menulis lain dengan fitur-fitur yang dikhususkan untuk menulis. Artinya tidak banyak opsi-opsi, menu, fasilitas pemerbaiki ejaan. Salah satu di antaranya kita _back-to-basic_ dengan menggunakan _text editor_. Keunggulan menggunakan _text editor_ adalah merupakan aplikasi _native_ (otomatis terinstal) pada setiap sistem operasi manapun. Aplikasi ini juga ringan dan hampir tidak membebani RAM maupun harddisk.
+
+Meskipun _text editor_ memang terkenal minim fitur dan tampilannya tidak mengundang selera, namun dengan demikian dapat meningkatkan konsentrasi dalam menulis. Selain itu juga sudah banyak _text editor_ yang dilengkapi dengan _plugin_ dan fitur _export_ ke jenis file lain seperti DOC, ODF, LATEX, hingga PDF sehingga mendukung kebutuhan _publishing_ pengguna penulis awam. Ada banyak pilihan _text editor_ yang nyaman digunakan untuk menulis dokumen yang panjang seperti skripsi, laporan, buku, bahkan untuk menyusun penelitian. Salah satu di antaranya adalah Emacs.
+
+Emacs digunakan cukup luas, tidak hanya di antara programmer namun juga penulis blog dan novel laris seperti [Randall Wood](http://therandymon.com) seorang _travel blogger_ dan penulis novel __Divergence__ (bukan Divergent ya), [Tony Ballantyne](http://tonyballantyne.com).
+
+Instalasi
+---------
+
+Biasanya Emacs sudah terpasang atau tersedia dalam _software center_ pada mesin GNU/Linux atau Mac OSX. Jika Anda menggunakan GNU/Linux, emacs bisa dipasang dengan _graphical user interface_ (GUI) atau hanya menggunakan _command line interface_ dalam _terminal emulator_. Instalasi lengkap Emacs pada GNU/Linux bisa diikuti di [link berikut](http://wikemacs.org/wiki/Installing_Emacs_on_GNU/Linux).
+
+Jika Anda menggunakan Mac OSX, Emacs sudah terpasang secara otomatis, bisa dibilang merupakan aplikasi bawaan ketika membeli perangkat Mac OS. Untuk menjalankannya buka _terminal emulator_, kemudian jalankan perintah `emacs`, maka akan muncul gambar seperti di bawah ini.
+
+Emacs juga tersedia untuk sistem operasi Windows. Ikuti [link berikut](https://www.emacswiki.org/emacs/MsWindowsInstallation) ini untuk menjalankan Emacs di dalam Windows.
+
+Istilah-istilah dalam Emacs
+---------------------------
+
+Ada istilah-istilah yang perlu dipahami ketika menggunakan Emacs. Beberapa istilahnya bisa dibilang baru dan agak aneh ketika kita gunakan. Namun ini akan membantu memahami bagaimana Emacs bekerja.
+
+* __Frame__ atau pada aplikasi lain akan menyebutnya sebagai jendela. Seperti halnya jendela aplikasi pada Windows, frame berfungsi untuk menampilkan interface Emacs yang siap digunakan.
+* __Buffer__ dapat dianalogikan seperti byte dalam RAM, suatu teks yang ditampilkan bersifat sementara. Ketika memulai tulisan yang baru Anda akan memulai dengan _buffer_, kemudian setelah disimpan, _buffer_ akan ditulis menjadi berkas dalam direktori.
+* __Window__ Sebaliknya, Emacs menggunakan istilah _window_ untuk menyebut jendela di dalam satu _frame_. Sehingga di dalam satu _frame_ kita bisa menampilkan 2 atau lebih _window_.
+* __Menu bar__ terletak di bagian paling atas. Fungsinya sama dengan jendela aplikasi lainnya yaitu menampilkan menu-menu fungsi tambahan Emacs.
+* __Echo area__ terletak pada bagian paling bawah jendela Emacs. Fungsinya adalah menampilkan pesan-pesan setelah menekan perintah atau memperingatkan kesalahan yang terjadi. Misal setelah menekan perintah untuk membuka berkas `C-x C-f` maka akan muncul pesan untuk memasukkan informasi berkas apa yang ingin dibuka.
+* __Mode line__ terletak tepat di atas _echo area_. Fungsinya memberikan informasi terkait _window_ yang sedang aktif. Misalnya memberikan informasi _buffer_ yang sedang ditampilkan, letak _point_, mode yang sedang aktif, dan juga _window_ yang sedang aktif. Jika terdapat 2 _window_ yang terbuka maka warna _mode line_ pada _window_ yang tidak aktif biasanya lebih gelap.
+* __Kill__ digunakan sebagai istilah untuk melakukan pemotongan teks atau "cut".
+* __Kill Ring__ adalah istilah seperti "clipboard" di mana semua teks yang kita "copy" atau "cut" di dalam emacs akan masuk ke dalam __kill ring__. Untuk memasukkan kembali ke dalam susunan teks kita menggunakan perintah __yank__.
+* __Yank__ digunakan sebagai istilah untuk melakukan penempelan teks yang telah dipotong atau "paste".
+
+Perlu diperhatikan bahwa mengoperasikan Emacs memiliki banyak perintah, kebanyakan menggunakan kombinasi kunci "Ctrl" dan "Alt". Misalnya perintah Ctrl-x maka akan ditulis dengan : `C-x` dan perintah Alt-x akan ditulis dengan `M-x`. Beberapa perintah memerlukan pengetikan beberapa perintah langsung, misalnya perintah untuk menjalankan _file browser_ di dalam Emacs (Ya! Anda bisa menjadikan Emacs sebagai file browser!) dengan perintah `C-x d` maka Anda perlu menekan Ctrl-x, lepas, lalu tekan d.
+
+Anda akan menemukan mudahnya mengeksplorasi fitur-fitur Emacs jika mengetahui caranya mengembalikan perubahan yang kita lakukan ("Undo"). Caranya dengan menekan `C-x u` atau `C-/`. Ada kalanya kita melakukan kesalahan dalam menekan perintah, misal ingin membuka direktori tetapi malah menekan `C-x C-f`. Perintah tersebut akan meminta file apa yang ingin dicari, namun kita dapat membatalkan perintah tersebut dengan menekan `C-g` dan akan ada tulisan "Quit" pada bagian _echo area_.
+
+Penutup
+-------
+
+Emacs merupakan text-editor dengan fitur yang melimpah dan dilengkapi plugins yang bisa diseting sesuai kebutuhan. Emacs juga banyak digunakan penulis bahkan akademisi untuk menulis dokumen yang panjang dan juga dilengkapi notasi-notasi rumit (dengan dikawinkan dengan LaTeX). Aplikasi ini juga cukup nyaman digunakan untuk keperluan menulis sehari-hari.
+
+Jika tertarik untuk mencobanya silahkan install sesuai instruksi di atas dan ikuti beberapa [catatan penting yang disusun oleh Randall Wood](http://therandymon.com/woodnotes/emacs-for-writers/emacs-for-writers.html) dalam hal penggunaan Emacs untuk keperluan menulis sehari-hari.
+
+Selamat mengeksplorasi Emacs yang tanpa batas!
