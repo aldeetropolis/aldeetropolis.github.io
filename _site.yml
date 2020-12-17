@@ -5,7 +5,7 @@ description: |
 output_dir: "docs"
 base_url: https://aldeetropolis.github.io
 navbar:
-  left:
+  right:
     - text: "Home"
       href: index.html
     - text: "About"
