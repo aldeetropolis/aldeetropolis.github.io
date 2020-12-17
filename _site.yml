@@ -1,11 +1,11 @@
 name: "aldeetropolis.github.io"
-title: "R in Healthcare Blog"
+title: "Healthcare Data Analytics"
 description: |
-  R in Healthcare Blog
+  Blog about various ways of data analysis in Healthcare
 output_dir: "docs"
 base_url: https://aldeetropolis.github.io
 navbar:
-  right:
+  left:
     - text: "Home"
       href: index.html
     - text: "About"
