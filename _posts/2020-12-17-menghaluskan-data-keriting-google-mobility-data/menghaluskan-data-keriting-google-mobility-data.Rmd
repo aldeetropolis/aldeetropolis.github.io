@@ -1,7 +1,7 @@
 ---
-title: "Various ways to create beautiful Github Pages"
+title: "Menghaluskan data "keriting" Google Mobility Data"
 description: |
-  Dari Jekyll, Hugo/Blogdown, dan sekarang pindah ke Distill.
+  A short description of the post.
 author:
   - name: Aldilas Achmad Nursetyo
     url: https://aldeetropolis.github.io/about.html
