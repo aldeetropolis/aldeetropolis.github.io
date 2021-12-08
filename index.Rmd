@@ -39,6 +39,8 @@ B.Sc. in Medicine & M.D. (Medical Doctor) | September 2007 - February 2015
 
 **International Center for Health Information Technology, TMU** | Research Scientist | January 2018 - August 2019
 
+***
+
 ## Publication
 
 1. Prediction of Clinical Events in Hemodialysis Patients Using an Artificial Neural Network [link](https://doi.org/10.3233/shti190539)
@@ -47,9 +49,9 @@ B.Sc. in Medicine & M.D. (Medical Doctor) | September 2007 - February 2015
 
 3. Graft Rejection Prediction Following Kidney Transplantation Using Machine Learning Techniques: A Systematic Review and Meta-Analysis [link](https://doi.org/10.3233/shti190173)
 
-4.. Artificial-Intelligence-Based Prediction of Clinical Events among Hemodialysis Patients Using Non-Contact Sensor Data [link](https://doi.org/10.3390/s18092833)
+4. Artificial-Intelligence-Based Prediction of Clinical Events among Hemodialysis Patients Using Non-Contact Sensor Data [link](https://doi.org/10.3390/s18092833)
 
-5.. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study [link](https://doi.org/10.3390/nu10060704)
+5. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study [link](https://doi.org/10.3390/nu10060704)
 
 6. Virtual Reality for Active Ageing: A feasibility study in Taiwan (APAMI 2018)
 
