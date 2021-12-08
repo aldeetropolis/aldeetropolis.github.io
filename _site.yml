@@ -2,6 +2,7 @@ name: "."
 title: "dr. Aldilas AN, M.Sc."
 description: |
   Blog about various ways of data analysis in Healthcare
+theme: theme.css
 output_dir: "docs"
 base_url: https://aldeetropolis.github.io
 navbar:

@@ -43,18 +43,20 @@ B.Sc. in Medicine & M.D. (Medical Doctor) | September 2007 - February 2015
 
 ## Publication
 
-1. Prediction of Clinical Events in Hemodialysis Patients Using an Artificial Neural Network [link](https://doi.org/10.3233/shti190539)
+1. Using machine learning models to predict the initiation of renal replacement therapy among chronic kidney disease patients [link](https://doi.org/10.1371/journal.pone.0233976)
 
-2. Virtual reality among the elderly: a usefulness and acceptance study from Taiwan [link](https://doi.org/10.1186/s12877-019-1218-8)
+2. Prediction of Clinical Events in Hemodialysis Patients Using an Artificial Neural Network [link](https://doi.org/10.3233/shti190539)
 
-3. Graft Rejection Prediction Following Kidney Transplantation Using Machine Learning Techniques: A Systematic Review and Meta-Analysis [link](https://doi.org/10.3233/shti190173)
+3. Virtual reality among the elderly: a usefulness and acceptance study from Taiwan [link](https://doi.org/10.1186/s12877-019-1218-8)
 
-4. Artificial-Intelligence-Based Prediction of Clinical Events among Hemodialysis Patients Using Non-Contact Sensor Data [link](https://doi.org/10.3390/s18092833)
+4. Graft Rejection Prediction Following Kidney Transplantation Using Machine Learning Techniques: A Systematic Review and Meta-Analysis [link](https://doi.org/10.3233/shti190173)
 
-5. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study [link](https://doi.org/10.3390/nu10060704)
+5. Artificial-Intelligence-Based Prediction of Clinical Events among Hemodialysis Patients Using Non-Contact Sensor Data [link](https://doi.org/10.3390/s18092833)
 
-6. Virtual Reality for Active Ageing: A feasibility study in Taiwan (APAMI 2018)
+6. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study [link](https://doi.org/10.3390/nu10060704)
 
-7. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study [link](https://doi.org/10.3390/nu10060704)
+7. Virtual Reality for Active Ageing: A feasibility study in Taiwan (Asia-Pasific Association of Medical Informatics 2018)
 
-8. Mobile and Wearable Technologies in Healthcare for the Ageing Population [link](https://doi.org/10.1016/j.cmpb.2018.04.026)
+8. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study [link](https://doi.org/10.3390/nu10060704)
+
+9. Mobile and Wearable Technologies in Healthcare for the Ageing Population [link](https://doi.org/10.1016/j.cmpb.2018.04.026)
