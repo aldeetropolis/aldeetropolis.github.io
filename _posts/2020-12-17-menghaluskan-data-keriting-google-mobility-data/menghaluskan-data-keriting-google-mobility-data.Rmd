@@ -1,7 +1,7 @@
 ---
-title: "Menghaluskan data "keriting" Google Mobility Data"
+title: "Data Wrangling pada Google Mobility Data menggunakan Tidyverse"
 description: |
-  A short description of the post.
+  Google Mobility data
 author:
   - name: Aldilas Achmad Nursetyo
     url: https://aldeetropolis.github.io/about.html

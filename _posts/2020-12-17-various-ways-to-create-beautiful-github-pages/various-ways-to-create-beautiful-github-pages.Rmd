@@ -1,7 +1,7 @@
 ---
-title: "Various ways to create beautiful Github Pages"
+title: "Macam-macam cara mempercantik Github Pages"
 description: |
-  Dari Jekyll, Hugo/Blogdown, dan sekarang pindah ke Distill.
+  Dari Jekyll, Hugo/Blogdown, hingga Distill.
 author:
   - name: Aldilas Achmad Nursetyo
     url: https://aldeetropolis.github.io/about.html
@@ -17,8 +17,16 @@ draft: true
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+## Pendahuluan
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+Pertama kali saya mengetahui mengenai Git dan Github justru dari seorang programmer lokal (saya lupa) yang memiliki laman Github Pages sederhana. Saat itu mungkin semacam Jekyll saja belum ada, tp dari situ saya tertarik membuat akun di Github. Namun justru pertama kali membuat laman Github Pages adalah pada tahun 2016 karena ada Jekyll framework yang sederhana dapat langsung digunakan untuk membuat Github Pages. Awalnya tidak akrab dengan bahasa pemrograman Ruby (requirement untuk develop situs berbasis Jekyll), namun ternyata ada cara lebih mudah yaitu cukup fork Git repo dari [Jekyll Now](https://github.com/barryclark/jekyll-now) dan beberapa pengaturan di Github dan selesailah.
 
+Sejak setahun lalu sudah rutin menggunakan R untuk data scraping, visualisasi, dan analisis data. Tiba-tiba tidak sengaja mengenal package `blogdown` yang dapat secara instan membuat blog atau website untuk project data analisis atau visualisasi data menggunakan R. `blogdown` berperan sebagai scaffolding dari bentuk website, dan Hugo berperan untuk menangani tampilannya. Meskipun nampaknya lebih mudah digunakan dibandingkan Jekyll, namun cukup banyak variasi pengaturan yang mungkn membuat bingung. Contohnya Hugo memiliki cukup banyak pilihan tema yang dikembangkan oleh orang yang berbeda-beda, dan masing-masing memiliki pengaturannya sendiri yang sudah disesuaikan temanya. Lebih lengkap mengenai `blogdown` dapat di baca di online book [di sini](https://bookdown.org/yihui/blogdown/).
 
+Karena sistem implementasinnya kompleks dan pilihan yang cukup banyak, kadang cukup memakan waktu untuk menyiapkan blog pribadi menggunakan `blogdown` dan Hugo. Cara ini lebih baik digunakan oleh organisasi yang membutuhkan static website yang kaya fitur dan menyediakan kustomisasi yang luas. Namun beberapa peneliti cukup pusing menggunakan cara ini. Belum lama ini saya menemukan package `distill` ketika seorang peneliti di bidang psikologi menanyakan cara membuat blog pribadi untuk penelitiannya menggunakan bahasa pemrograman R dan Github. Salah satu pengikutnya menyarankan menggunakan `distill`. Alasannya karena cepat digunakan dan tidak membutuhkan kustomisasi yang bermacam-macam. `distill` berperan sebagai scaffolding juga menyediakan support untuk CSS jika pengguna ingin mengubah tampilan blognya.
+
+Setelah mencoba menggunakan `distill` saya sepakat dengan yang dikatakan orang-orang bahwa menggunakan package ini untuk keperluan blog pribadi merupakan pilihan yang tepat. Package ini mudah digunakan. Meskipun template defaultnya monoton namun cukup cantik dan fungsional.
+
+## Sepintas Cara Menggunakan Distill
+
+Seperti biasa install terlebih dahulu package `distill` dengan mengetikan `install.packages("distill")` di konsol R atau RStudio.
