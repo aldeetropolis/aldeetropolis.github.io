@@ -1,5 +1,5 @@
-name: "aldeetropolis.github.io"
-title: "Healthcare Data Analytics"
+name: "."
+title: "dr. Aldilas AN, M.Sc."
 description: |
   Blog about various ways of data analysis in Healthcare
 output_dir: "docs"
@@ -8,6 +8,6 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Blog"
+      href: blog.html
 output: distill::distill_article

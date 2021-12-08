@@ -86,7 +86,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Healthcare Data Analytics: Writing with Emacs</title>
+<title>dr. Aldilas AN, M.Sc.: Writing with Emacs</title>
 
 <meta property="description" itemprop="description" content="Writing can be using anything!"/>
 
@@ -98,21 +98,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta name="article:author" content="Aldilas Achmad Nursetyo"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Healthcare Data Analytics: Writing with Emacs"/>
+<meta property="og:title" content="dr. Aldilas AN, M.Sc.: Writing with Emacs"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Writing can be using anything!"/>
 <meta property="og:url" content="https://aldeetropolis.github.io/posts/2016-05-21-writing-with-emacs/"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:site_name" content="Healthcare Data Analytics"/>
+<meta property="og:site_name" content="dr. Aldilas AN, M.Sc."/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Healthcare Data Analytics: Writing with Emacs"/>
+<meta property="twitter:title" content="dr. Aldilas AN, M.Sc.: Writing with Emacs"/>
 <meta property="twitter:description" content="Writing can be using anything!"/>
 <meta property="twitter:url" content="https://aldeetropolis.github.io/posts/2016-05-21-writing-with-emacs/"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Healthcare Data Analytics: Writing with Emacs"/>
+<meta name="citation_title" content="dr. Aldilas AN, M.Sc.: Writing with Emacs"/>
 <meta name="citation_fulltext_html_url" content="https://aldeetropolis.github.io/posts/2016-05-21-writing-with-emacs/"/>
 <meta name="citation_online_date" content="2016/05/21"/>
 <meta name="citation_publication_date" content="2016/05/21"/>
@@ -464,8 +464,15 @@ d-title {
   top: 0;
 }
 
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
 </style>
 
+<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -573,19 +580,21 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           var results = fuse.search(query, searchOptions);
           callback(results
             .map(function(result) { return result.item; })
-            .filter(function(item) { return !!item.description; })
           );
         },
         templates: {
           suggestion: function(suggestion) {
+            var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+              ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+              : '';
             var html = `
               <div class="search-item">
                 <h3>${suggestion.title}</h3>
                 <div class="search-item-description">
-                  ${suggestion.description}
+                  ${suggestion.description || ''}
                 </div>
                 <div class="search-item-preview">
-                  <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
+                  ${img}
                 </div>
               </div>
             `;
@@ -608,6 +617,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 
 <style type="text/css">
+
+.nav-search {
+  font-size: x-small;
+}
 
 /* Algolioa Autocomplete */
 
@@ -683,6 +696,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 }
 
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  font-size: 1rem;
   margin-block-start: 0;
   margin-block-end: 5px;
 }
@@ -910,6 +924,11 @@ d-article pre a:hover {
   text-decoration: underline;
 }
 
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
 @media(min-width: 768px) {
 
 d-article pre,
@@ -1064,6 +1083,17 @@ d-article .citation {
 
 div.hanging-indent{
   margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
 }
 
 
@@ -1731,7 +1761,7 @@ function init_distill() {
     var layout = $(this).attr('data-layout');
 
     // apply layout to markdown level block elements
-    var elements = $(this).children().not('div.sourceCode, pre, script');
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
     elements.each(function(i, el) {
       var layout_div = $('<div class="' + layout + '"></div>');
       if (layout_div.hasClass('shaded')) {
@@ -1846,6 +1876,20 @@ function init_distill() {
     // move appendix-bottom entries to the bottom
     $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
     $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
 
     // clear polling timer
     clearInterval(tid);
@@ -2030,12 +2074,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="../../index.html" class="title">Healthcare Data Analytics</a>
+<a href="../../index.html" class="title">dr. Aldilas AN, M.Sc.</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
 <a href="../../index.html">Home</a>
-<a href="../../about.html">About</a>
+<a href="../../blog.html">Blog</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2101,11 +2145,11 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="appendix-bottom">
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Nursetyo (2016, May 21). Healthcare Data Analytics: Writing with Emacs. Retrieved from https://aldeetropolis.github.io/posts/2016-05-21-writing-with-emacs/</pre>
+  <pre class="citation-appendix short">Nursetyo (2016, May 21). dr. Aldilas AN, M.Sc.: Writing with Emacs. Retrieved from https://aldeetropolis.github.io/posts/2016-05-21-writing-with-emacs/</pre>
   <p>BibTeX citation</p>
   <pre class="citation-appendix long">@misc{nursetyo2016writing,
   author = {Nursetyo, Aldilas Achmad},
-  title = {Healthcare Data Analytics: Writing with Emacs},
+  title = {dr. Aldilas AN, M.Sc.: Writing with Emacs},
   url = {https://aldeetropolis.github.io/posts/2016-05-21-writing-with-emacs/},
   year = {2016}
 }</pre>
