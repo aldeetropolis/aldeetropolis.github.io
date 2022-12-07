@@ -43,6 +43,14 @@ B.Sc. in Medicine & M.D. (Medical Doctor) | September 2007 - February 2015
 
 ## Publication
 
+```{r}
+library("tidyverse")
+library("rmarkdown")
+cite <- read_csv("citations.csv") %>% select(c(2:3,7))
+paged_table(cite)
+```
+
+
 1. Using machine learning models to predict the initiation of renal replacement therapy among chronic kidney disease patients [link](https://doi.org/10.1371/journal.pone.0233976)
 
 2. Prediction of Clinical Events in Hemodialysis Patients Using an Artificial Neural Network [link](https://doi.org/10.3233/shti190539)
