@@ -17,11 +17,17 @@ site: distill::distill_website
  
 ## Bio
 
-Since 2017, Aldilas has been actively involved in contribute and developing at national and regional level, either academically or direct consultancy. He has experience in developing monitoring and evaluation system in National Family Planning Coordinating Agency (BKKBN) and strengthening national disease surveillance system, especially for early warning and response system (EWARS). He also experienced in research methodology, either quantitative or qualitative methodology, while demonstrating excelence scientific writing and publication experience.
+Since 2017, Aldilas has been actively involved in contribute and developing at national and regional level, either academically or direct consultancy. He has experience in developing monitoring and evaluation system in National Family Planning Coordinating Agency (BKKBN) and strengthening national disease surveillance system, especially for early warning and response system (EWARS). He also experienced in research methodology, either quantitative or qualitative methodology, while demonstrating excelence scientific writing and publication experience. Currently, he is active as researcher in Center for Health Policy and Management, Universitas Gadjah Mada, Indonesia.
 
 ***
 
 ## Education
+
+*Taipei Medical University*, M.S. Biomedical Informatics \hfill 2017-2019
+
+*Universitas Muhammadiyah Yogyakarta*, M.D. \hfill 2013-2015
+
+*Universitas Muhammadiyah Yogyakarta*, Bachelor of Medicine \hfill 2007-2012
 
 **Taipei Medical University** | Taipei, TW
 
@@ -43,28 +49,26 @@ B.Sc. in Medicine & M.D. (Medical Doctor) | September 2007 - February 2015
 
 ## Publication
 
-```{r}
-library("tidyverse")
-library("rmarkdown")
-cite <- read_csv("citations.csv") %>% select(c(2:3,7))
-paged_table(cite)
-```
+Rahmanti, A. R., Yang, H.-C., Bintoro, B. S., Nursetyo, A. A., Muhtar, M. S., Syed-Abdul, S., & Li, Y.-C. J. (2022). SlimMe, a Chatbot With Artificial Empathy for Personal Weight Management: System Design and Finding. Frontiers in Nutrition, 9, 870775. https://doi.org/10.3389/fnut.2022.870775
 
+Rahmanti, A. R., Chien, C.-H., Nursetyo, A. A., Husnayain, A., Wiratama, B. S., Fuad, A., Yang, H.-C., & Li, Y.-C. J. (2022). Social media sentiment analysis to monitor the performance of vaccination coverage during the early phase of the national COVID-19 vaccine rollout. Computer Methods and Programs in Biomedicine, 221, 106838. https://doi.org/10.1016/j.cmpb.2022.106838
 
-1. Using machine learning models to predict the initiation of renal replacement therapy among chronic kidney disease patients [link](https://doi.org/10.1371/journal.pone.0233976)
+Nanda, R. O., Nursetyo, A. A., Ramadona, A. L., Imron, M. A., Fuad, A., Setyawan, A., & Ahmad, R. A. (2022). Community Mobility and COVID-19 Dynamics in Jakarta, Indonesia. International Journal of Environmental Research and Public Health, 19(11), 6671. https://doi.org/10.3390/ijerph19116671
 
-2. Prediction of Clinical Events in Hemodialysis Patients Using an Artificial Neural Network [link](https://doi.org/10.3233/shti190539)
+Hardhantyo, M., Djasri, H., Nursetyo, A. A., Yulianti, A., Adipradipta, B. R., Hawley, W., Mika, J., Praptiningsih, C. Y., Mangiri, A., Prasetyowati, E. B., & Brye, L. (2022). Quality of National Disease Surveillance Reporting before and during COVID-19: A Mixed-Method Study in Indonesia. International Journal of Environmental Research and Public Health, 19(5), 2728. https://doi.org/10.3390/ijerph19052728
 
-3. Virtual reality among the elderly: a usefulness and acceptance study from Taiwan [link](https://doi.org/10.1186/s12877-019-1218-8)
+Dovgan, E., Gradišek, A., Luštrek, M., Uddin, M., Nursetyo, A. A., Annavarajula, S. K., Li, Y.-C., & Syed-Abdul, S. (2020). Using machine learning models to predict the initiation of renal replacement therapy among chronic kidney disease patients. PLOS ONE, 15(6), e0233976. https://doi.org/10.1371/journal.pone.0233976
 
-4. Graft Rejection Prediction Following Kidney Transplantation Using Machine Learning Techniques: A Systematic Review and Meta-Analysis [link](https://doi.org/10.3233/shti190173)
+Syed-Abdul, S., Malwade, S., Nursetyo, A. A., Sood, M., Bhatia, M., Barsasella, D., Liu, M. F., Chang, C.-C., Srinivasan, K., M., R., & Li, Y.-C. J. (2019). Virtual reality among the elderly: A usefulness and acceptance study from Taiwan. BMC Geriatrics, 19(1), 223. https://doi.org/10.1186/s12877-019-1218-8
 
-5. Artificial-Intelligence-Based Prediction of Clinical Events among Hemodialysis Patients Using Non-Contact Sensor Data [link](https://doi.org/10.3390/s18092833)
+Nursetyo, A. A., Syed-Abdul, S., Uddin, M., & Li, Y.-C. J. (2019). Graft Rejection Prediction Following Kidney Transplantation Using Machine Learning Techniques: A Systematic Review and Meta-Analysis. Studies in Health Technology and Informatics, 264, 10–14. https://doi.org/10.3233/SHTI190173
 
-6. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study [link](https://doi.org/10.3390/nu10060704)
+Putra, F. R., Nursetyo, A. A., Thakur, S. S., Roy, R. B., Syed-Abdul, S., Malwade, S., & Li, Y.-C. J. (2019). Prediction of Clinical Events in Hemodialysis Patients Using an Artificial Neural Network. Studies in Health Technology and Informatics, 264, 1570–1571. https://doi.org/10.3233/SHTI190539
 
-7. Virtual Reality for Active Ageing: A feasibility study in Taiwan (Asia-Pasific Association of Medical Informatics 2018)
+Thakur, S. S., Abdul, S. S., Chiu, H.-Y. (Shannon), Roy, R. B., Huang, P.-Y., Malwade, S., Nursetyo, A. A., & Li, Y.-C. (Jack). (2018). Artificial-Intelligence-Based Prediction of Clinical Events among Hemodialysis Patients Using Non-Contact Sensor Data. Sensors, 18(9), 2833. https://doi.org/10.3390/s18092833
 
-8. Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study [link](https://doi.org/10.3390/nu10060704)
+Ganapathy, K., Abdul, S., & Nursetyo, A. (2018). Artificial intelligence in neurosciences: A clinician’s perspective. Neurology India, 66(4), 934. https://doi.org/10.4103/0028-3886.236971
 
-9. Mobile and Wearable Technologies in Healthcare for the Ageing Population [link](https://doi.org/10.1016/j.cmpb.2018.04.026)
+Malwade, S., Abdul, S. S., Uddin, M., Nursetyo, A. A., Fernandez-Luque, L., Zhu, X. (Katie), Cilliers, L., Wong, C.-P., Bamidis, P., & Li, Y.-C. (Jack). (2018). Mobile and wearable technologies in healthcare for the ageing population. Computer Methods and Programs in Biomedicine, 161, 233–237. https://doi.org/10.1016/j.cmpb.2018.04.026
+
+Nurwanti, E., Uddin, M., Chang, J.-S., Hadi, H., Syed-Abdul, S., Su, E., Nursetyo, A., Masud, J., & Bai, C.-H. (2018). Roles of Sedentary Behaviors and Unhealthy Foods in Increasing the Obesity Risk in Adult Men and Women: A Cross-Sectional National Study. Nutrients, 10(6), 704. https://doi.org/10.3390/nu10060704

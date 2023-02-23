@@ -86,7 +86,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>dr. Aldilas AN, M.Sc.: Openbox WM di dalam MATE DE</title>
+<title>dr. Aldilas AN, M.S.: Openbox WM di dalam MATE DE</title>
 
 <meta property="description" itemprop="description" content="Instalasi window manager ringan Openbox saat menggunakan MATE sebagai Linux Desktop Environment."/>
 
@@ -98,21 +98,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta name="article:author" content="Aldilas Achmad Nursetyo"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="dr. Aldilas AN, M.Sc.: Openbox WM di dalam MATE DE"/>
+<meta property="og:title" content="dr. Aldilas AN, M.S.: Openbox WM di dalam MATE DE"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Instalasi window manager ringan Openbox saat menggunakan MATE sebagai Linux Desktop Environment."/>
 <meta property="og:url" content="https://aldeetropolis.github.io/posts/2014-12-22-openbox-wm-di-dalam-mate-de/"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:site_name" content="dr. Aldilas AN, M.Sc."/>
+<meta property="og:site_name" content="dr. Aldilas AN, M.S."/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="dr. Aldilas AN, M.Sc.: Openbox WM di dalam MATE DE"/>
+<meta property="twitter:title" content="dr. Aldilas AN, M.S.: Openbox WM di dalam MATE DE"/>
 <meta property="twitter:description" content="Instalasi window manager ringan Openbox saat menggunakan MATE sebagai Linux Desktop Environment."/>
 <meta property="twitter:url" content="https://aldeetropolis.github.io/posts/2014-12-22-openbox-wm-di-dalam-mate-de/"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="dr. Aldilas AN, M.Sc.: Openbox WM di dalam MATE DE"/>
+<meta name="citation_title" content="dr. Aldilas AN, M.S.: Openbox WM di dalam MATE DE"/>
 <meta name="citation_fulltext_html_url" content="https://aldeetropolis.github.io/posts/2014-12-22-openbox-wm-di-dalam-mate-de/"/>
 <meta name="citation_online_date" content="2014/12/22"/>
 <meta name="citation_publication_date" content="2014/12/22"/>
@@ -472,7 +472,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1044,10 +1044,6 @@ figure img.external {
   position: relative;
   margin-bottom: 2.5em;
   margin-top: 1.5em;
-}
-
-.figure img {
-  width: 100%;
 }
 
 .figure .caption {
@@ -1879,7 +1875,16 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+        var fn = $(this).children()[0]
+        $(this).html(fn.shadowRoot.querySelector("sup"))
+        $(this).id = fn.id
+        fn.remove()
+      }
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -1890,6 +1895,31 @@ function init_distill() {
         placement: 'bottom-start'
       });
     });
+
+    // fix footnotes in tables (#411)
+    // replacing broken distill.pub feature
+    $('table d-footnote').each(function() {
+      // we replace internal showAtNode methode which is triggered when hovering a footnote
+      this.hoverBox.showAtNode = function(node) {
+        // ported from https://github.com/distillpub/template/pull/105/files
+        calcOffset = function(elem) {
+            let x = elem.offsetLeft;
+            let y = elem.offsetTop;
+            // Traverse upwards until an `absolute` element is found or `elem`
+            // becomes null.
+            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                x += elem.offsetLeft;
+                y += elem.offsetTop;
+            }
+
+            return { left: x, top: y };
+        }
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+        const bbox = node.getBoundingClientRect();
+        const offset = calcOffset(node);
+        this.show([offset.left + bbox.width, offset.top + bbox.height]);
+      }
+    })
 
     // clear polling timer
     clearInterval(tid);
@@ -1989,6 +2019,8 @@ function init_common() {
   // mark non-body figures created by knitr chunks as 100% width
   $('.layout-chunk').each(function(i, val) {
     var figures = $(this).find('img, .html-widget');
+    // ignore leaflet img layers (#106)
+    figures = figures.filter(':not(img[class*="leaflet"])')
     if ($(this).attr('data-layout') !== "l-body") {
       figures.css('width', '100%');
     } else {
@@ -2011,7 +2043,7 @@ function init_common() {
   // get rid of index.html references in header
   if (window.location.protocol !== "file:") {
     $('.distill-site-header a[href]').each(function(i,val) {
-      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
     });
   }
 
@@ -2416,7 +2448,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="../../index.html" class="title">dr. Aldilas AN, M.Sc.</a>
+<a href="../../index.html" class="title">dr. Aldilas AN, M.S.</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
@@ -2469,11 +2501,11 @@ d-appendix d-footnote-list a.footnote-backlink {
 <div class="appendix-bottom">
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Nursetyo (2014, Dec. 22). dr. Aldilas AN, M.Sc.: Openbox WM di dalam MATE DE. Retrieved from https://aldeetropolis.github.io/posts/2014-12-22-openbox-wm-di-dalam-mate-de/</pre>
+  <pre class="citation-appendix short">Nursetyo (2014, Dec. 22). dr. Aldilas AN, M.S.: Openbox WM di dalam MATE DE. Retrieved from https://aldeetropolis.github.io/posts/2014-12-22-openbox-wm-di-dalam-mate-de/</pre>
   <p>BibTeX citation</p>
   <pre class="citation-appendix long">@misc{nursetyo2014openbox,
   author = {Nursetyo, Aldilas Achmad},
-  title = {dr. Aldilas AN, M.Sc.: Openbox WM di dalam MATE DE},
+  title = {dr. Aldilas AN, M.S.: Openbox WM di dalam MATE DE},
   url = {https://aldeetropolis.github.io/posts/2014-12-22-openbox-wm-di-dalam-mate-de/},
   year = {2014}
 }</pre>
